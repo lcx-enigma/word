@@ -1,0 +1,67 @@
+body {
+    background: url(../assets/checkBg.webp);
+    height: 100%;
+}
+
+.container {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    color: #fff;
+}
+
+input {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 25px;
+    padding: 0 25px;
+    background: none;
+    color: #fff;
+    outline: none;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #fff, #45a5a5) 1;
+}
+input::placeholder{
+    color: #ffffff73;
+}
+
+.fill {
+    height: 150px;
+    margin-top: 30px;
+    transition: 2s;
+}
+
+.english,
+.chinese {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    width: 45px;
+    border-bottom: 2px solid #fff;
+}
+
+.chinese {
+    right: 0;
+}
+
+.cue {
+    position: fixed;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    top: 7px;
+    right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.pop::-webkit-scrollbar {
+    display: none;
+}

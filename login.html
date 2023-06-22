@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="https://img0.baidu.com/it/u=3470924855,3609644708&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <form class="login-form">
+        <h1 class="gameName">
+            LOGIN
+        </h1>
+        <div class="form-item">
+            <input type="text" name="loginId" id="txtLoginId" class="txt" max="20" placeholder="请输入账号">
+            <p class="err"></p>
+        </div>
+        <div class="form-item">
+            <input type="password" name="loginPwd" id="txtLoginPwd" class="txt" max="20" placeholder="请输入密码">
+            <p class="err"></p>
+        </div>
+        <div class="form-submit">
+            <button class="landing">登陆</button>
+        </div>
+        <div class="enroll">
+            <p class="noInformation">
+                没有账号？
+                <a class="enroll">点击这里注册一个</a>
+            </p>
+        </div>
+    </form>
+    <script src="./js/network.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

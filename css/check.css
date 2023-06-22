@@ -1,0 +1,109 @@
+body {
+    background: url(../assets/checkBg.webp);
+    background-size: 100%;
+}
+.container {
+    margin: 55px auto 180px auto;
+    width: 200px;
+    position: relative;
+}
+
+.english,
+.chinese {
+    display: flex;
+    width: 200px;
+    margin: 0px auto;
+    position: relative;
+}
+
+li {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #ffffff;
+    position: relative;
+    font-size: 17px;
+}
+
+input {
+    width: 80%;
+    height: 100%;
+    padding: 0px 5px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    background: none;
+    color: #ffffff;
+}
+
+.enPhraseology>li,
+.chPhraseology>li {
+    text-align: center;
+    line-height: 50px;
+}
+.enPhraseology>li{
+    overflow-Y: auto;
+}
+.enPhraseology>li::-webkit-scrollbar {
+    display: none;
+}
+.isExactness {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ccc;
+    left: 110px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.english {
+    transition: 2s;
+}
+
+.chinese {
+    opacity: 0;
+    transition: 2s;
+}
+
+.changeEN,
+.changeCH {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2.5em;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.changeCH {
+    display: none;
+}
+
+.change {
+    position: absolute;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2.5em;
+    left: -43px;
+    top: 0px;
+}
+
+.cue{
+    position: fixed;
+    width: 49px;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    top: 7px;
+    right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.pop::-webkit-scrollbar {
+    display: none;
+}
